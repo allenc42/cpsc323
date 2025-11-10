@@ -6,7 +6,7 @@ stringHolder = False #If holder has a string or not
 #Tokens
 keywords = ["int", "float", "string", "char", "if", "return", "for", "else"]
 operators = ["+", "-", "=", "<", ">"]
-double_operators = ["==", "!=", ">=", "<=", "++"]
+doubleOperators = ["==", "!=", ">=", "<=", "++"]
 separators = ["(", ")", "{", "}", ";"]
 
 with open("InputFile.txt") as f:
@@ -47,7 +47,7 @@ while i < len(text):
     if i + 1 < len(text):
         char_longer = text[i+1]
     
-    #Check to see if our current character is not a whitespace, is currently not a string, operator, or separator 
+    #Check to see if our current character is not a whitespace, string, operator, or separator 
     if char != " " and stringHolder == False and char not in operators and char not in separators:
         #Adds our character to a holder
         holder += char
@@ -70,7 +70,7 @@ while i < len(text):
         #Add the operator and separator to output
         if char in operators:
             #Checks to see if the operator consist of two characters(ie, ==, !=, >=, <=)
-            if char + char_longer in double_operators:
+            if char + char_longer in doubleOperators:
                 output += f'"{char + char_longer}" = operator '
                 i += 2
                 continue
