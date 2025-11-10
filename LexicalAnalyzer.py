@@ -16,7 +16,7 @@ with open("InputFile.txt") as f:
         if "//" in line:
             start = line.find("//")
             line = line[:start] #Deletes "//", and all characters afterwards
-        line = line.strip() #Get rid of all whitespace
+        line = line.strip() #Get rid of unneeded whitespace
         text += line #text without unnecessary whitespaces or comments
 
 #Goes through the string character by character
