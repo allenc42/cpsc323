@@ -1,7 +1,7 @@
 text = "" #The text file
-holder = "" #Holder for adding to our input
+holder = "" #Holder for adding to our output
 output = "" #final output
-stringHolder = False #is current text a string
+stringHolder = False #If holder has a string or not
 
 #Tokens
 keywords = ["int", "if", "return", "float", "string", "char"]
