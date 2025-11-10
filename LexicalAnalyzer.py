@@ -4,9 +4,9 @@ output = "" #final output
 stringHolder = False #If holder has a string or not
 
 #Tokens
-keywords = ["int", "if", "return", "float", "string", "char"]
+keywords = ["int", "float", "string", "char", "if", "return", "for", "else"]
 operators = ["+", "-", "=", "<", ">"]
-double_operators = ["==", "!=", ">=", "<="]
+double_operators = ["==", "!=", ">=", "<=", "++"]
 separators = ["(", ")", "{", "}", ";"]
 
 with open("InputFile.txt") as f:
